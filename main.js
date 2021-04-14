@@ -117,4 +117,4 @@ if(SpeechRecognition) {
 else {
   console.log("Your Browser does not support speech Recognition");
   info.textContent = "Your Browser does not support Speech Recognition";
-}n
+}
