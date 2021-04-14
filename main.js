@@ -56,11 +56,11 @@ if(SpeechRecognition) {
       window.open("ayuda.html" , "ventana1" , "width=1920,height=1080,scrollbars=NO")
     }
     
-    if(transcript.toLowerCase().trim()==="salir") {
+    if(transcript.toLowerCase().trim()==="salir del sitio") {
      //window.close();
      
       var mensaje;
-      var opcion = confirm("Click a en Aceptar o Cancelar");
+      var opcion = confirm("Para salir dar clic en aceptar");
      
       if (opcion == true) {
          mensaje = "Has clickado OK";
@@ -71,10 +71,6 @@ if(SpeechRecognition) {
         mensaje = "Has clickado Cancelar";
     }
     document.getElementById("ejemplo").innerHTML = mensaje;
-  
-  
-  
-    
   }
     else {
       if(transcript.toLowerCase().trim()==="busca múltiple") {
