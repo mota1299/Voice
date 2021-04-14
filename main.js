@@ -63,6 +63,7 @@ if(SpeechRecognition) {
       var opcion = confirm("Click a en Aceptar o Cancelar");
       if (opcion == true) {
          mensaje = "Has clickado OK";
+         recognition.stop();
          window.close();     //window.close();
     } else {
         mensaje = "Has clickado Cancelar";
