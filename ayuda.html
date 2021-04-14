@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- Labrerías CSS para Datables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+
+    <title>Reconocimiento de voz</title>
+    
+</head>
+<body>
+  
+ <style> 
+    
+
+#card1{
+    position: absolute;
+top: 420px; left: 370px;
+}
+#card2{
+    position: absolute;
+top: 420px; left: 40px;
+}
+#card3{
+    position: absolute;
+top: 420px; left: 700px;
+}
+#card4{
+    position: absolute;
+top: 420px; left: 1000px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('https://fondosmil.com/fondo/17542.jpg');
+  }
+  #boton{
+    position: absolute;
+top: 610px; left: 39%;
+  }
+  .list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+</style>  
+  <nav class="navbar fixed-top navbar-dark blue-gradient">
+    
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Siri_icon.svg/2000px-Siri_icon.svg.png" width="30" height="30" alt="">
+   </nav> 
+  
+<center>  <div class="col-md-8 p-5 ">
+
+    <div class="card-body">
+      <h5 class="card-title">Ayuda</h5>
+        <p>Aplicación de búsqueda mediante comandos de voz en los sitios:</p>
+     <p>  <a href="https://www.superama.com.mx">Superama</a>  </p>
+     <p> <a href="https://www.famsa.com/">Famsa</a>  </p>
+     <p> <a href="https://www.sears.com.mx/">Sears</a>  </p>
+     <p> <a href="https://www.nintendo.com">Nintendo</a>  </p>
+     <p> <a href="https://mascaradelatex.com/">Máscara de latex</a>  </p>
+      </div>
+  </div>
+</center>
+
+
+
+
+
+
+
+<div class="card col-md-2" id="card2">
+    <div class="card-body">
+    <center> <h5 class="card-title">Paso 1</h5></center>
+      <p class="card-text"  style="text-align:justify;">
+        Presionar el bóton con el icono de microfono para inicar el reconocimiento de voz.
+      </p>
+    </div>
+  </div>
+
+  <div class="card col-md-2" id="card1">
+    <div class="card-body">
+        <center><h5 class="card-title">Paso 2</h5></center>
+      <p class="card-text" style="text-align:justify;">
+       Hablar claramente indicando lo que desea buscar, en todos o en algun sitio en especifíco.
+      </p>
+    </div>
+  </div>
+  <div class="card col-md-2" id="card3">
+    <div class="card-body">
+        <center>  <h5 class="card-title">Paso 3</h5></center>
+      <p class="card-text" style="text-align:justify;">
+        Para realizar una búsqueda completa al teminar de dictar la búsqueda, deberá decir "busca múltiple"
+      </p>
+    </div>
+  </div>
+
+  <div class="card col-md-2" id="card4">
+    <div class="card-body">
+      <center><h5 class="card-title" style="text-align:justify;">Paso 4</h5></center>
+      <p class="card-text">
+        Para una búsqueda en un sitio deberá de decir, el nombre de la tienda deseada según el caso.
+      </p>
+    </div>
+  </div>
+<!-- Trigger the modal with a button -->
+<button id="boton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Todos los comandos</button>
+
+<!-- Modal -->
+ <div id="myModal" class="modal fade" role="dialog">
+ 
+
+  <div class="modal-dialog" style="max-height:85%;  margin-top: 100px; margin-bottom:100px;" > 
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+
+<h4 class="modal-title">Comandos</h4>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Busca múltiple</h5>
+    </div>
+    <small>Realiza la búsqueda en las cinco páginas web</small>
+  </a>
+
+
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Superama</h5>
+    </div>
+    <small>Realiza la búsqueda en la tienda Superama</small>
+  </a>
+
+
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Famsa</h5>
+    </div>
+    <small>Realiza la búsqueda en la tienda Famsa</small>
+  </a>
+
+
+
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Sears</h5>
+    </div>
+    <small>Realiza la búsqueda en la tienda Sears</small>
+  </a>
+
+
+
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Nintendo</h5>
+    </div>
+    <small>Realiza la búsqueda en la tienda Nintendo</small>
+  </a>
+
+
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Máscara de látex</h5>
+    </div>
+    <small>Realiza la búsqueda en la tienda Máscara de látex</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Reiniciar</h5>
+    </div>
+    <small>Deja vacío la entrada de texto</small>
+  </a>
+
+
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Detener grabación</h5>
+    </div>
+    <small>Detiene el reconocimiento de voz</small>
+  </a>
+
+
+</div>
+    </div>
+
+
+
+      <!-- Footer -->
+<footer class="page-footer font-small blue-gradient fixed-bottom">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© JJAM
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+<!-- Librerías Js para Datables -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+</body>
+</html>
